@@ -62,7 +62,8 @@ If you already have projects and are familier with GCP you can select any of you
  ![Console](./resources/console_7.png)
  
 10. In the "Firewall" enable HTTP and HTTPs traffic and in "Advanced options->Networking" enable the "IP forwarding" as shown below
-    
-    ![Console](./resources/console_8.png)
 
-7. VM instances status bar. When you are not using the VM you can shutdown it so that you do not consume you credits. However, do not delete till you are done with this tutorial or your project. Otherwise, you have to re-create another VM follwing all steps.
+![Console](./resources/console_8.png)
+
+11. Check if the installation is correct by using "uname" for OS and kernel and check if the AVX2 instructions are there with `lscpu | grep avx2`
+12.  VM instances status bar. When you are not using the VM you can shutdown it so that you do not consume you credits. However, do not delete till you are done with this tutorial or your project. Otherwise, you have to re-create another VM follwing all steps.

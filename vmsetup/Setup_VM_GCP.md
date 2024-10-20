@@ -24,7 +24,7 @@ Depending on the country you are located, generally you have some free credits t
 
 ## 1.2 Computing Requirements
 To run an end-to-end 5G network with OAI Core Network (CN),
-Radio Access Network (RAN) including base station (gNB) and user equipment (nrUE) in a RFsim, we should have the following minimum recommended computing requirements: 
+Radio Access Network (RAN) including base station (gNB) and user equipment (nrUE) in RFsim mode, we should have the following minimum recommended computing requirements: 
 -  Operating System: Ubuntu 22.04 LTS
 -  CPU: 8 cores x86_64 @ 3.5 GHz
 - RAM: 32 GB
@@ -33,9 +33,10 @@ We will now create a VM on the GCP that satisfies these requirements.
 
 # 2. VM Creation
 
-Step 1:  Accessing the console and creating a project
+**Step 1:  Accessing the console and creating a project**
+
 1.  Open your web browser and login to [https://console.cloud.google.com/](https://console.cloud.google.com/).
-2.  If you are using for the GCP for the first time, you will not any projects. If you don’t have a project yet, you can create a new project and then select it.
+2.  If you are using GCP for the first time, you will not any projects. If you don’t have a project yet, you can create a new project and then select it.
 
 ![Console](./resources/console_1.png)
 
@@ -45,22 +46,23 @@ If you already have projects and are familier with GCP you can select any of you
 
  ![Console](./resources/console_3.png)
  
- Step 2:  Creating a VM Instance
+**Step 2:  Creating a VM Instance**
  
 1. Select the "Compute Engine" and then "VM instances" to create a new VM instance from your project dashboard.
 2. Click on the "CREATE INSTANCE" button
-3. 
-   
+3. Enter a name to your VM instance and then choose the region. Prefarbly select a region closest to yours for better performance.
+4. Choose "General purpose" Machine Configuration. OAI is relaibaly tested on x86 architecture and requires Advanced Vector Extensions (AVX2) instructions. The AVX2 instructions are supported by starting from Intel Haswell platforms. Therfore choose a "series" that respects these constraints. An example tested configuration is shown in the figure below.
+7. USe the "CUSTOM" option to set your machine type. We require atleast 8vCPU cores (4 physical cores) and 16 GB of RAM. An example tested configuration is shown in the figure below.
  
-  
+ ![Console](./resources/console_6.png)
+ 
+8. If you wnat to use screen caputuring and recording you can enable the "Display device" option
+9. Using the "Boot disk" option choose the **x86 Ubuntu 22.04** operating system as shown below
 
+ ![Console](./resources/console_7.png)
+ 
+10. In the "Firewall" enable HTTP and HTTPs traffic and in "Advanced options->Networking" enable the "IP forwarding" as shown below
+    
+    ![Console](./resources/console_8.png)
 
-Step 4: Creating a VM Instance
-1. Choosing server location and general purpose
-2. Create a custom Machine type
-3. CPU platform must be x86 based 
-4. Boot disk changes...ubuntu 22.04, 12 GB space
-5. Firewall allow traffic 
-6. Advanced options and networking enable IP forwarding 
-7. VM instances status bar. When you are not using it you can pause so you do not consume you credits. However, do not delete till you are done with this tutorial or your project. Otherwise, you have to re-create another VM follwing all steps from 1.
-Step 5: 
+7. VM instances status bar. When you are not using the VM you can shutdown it so that you do not consume you credits. However, do not delete till you are done with this tutorial or your project. Otherwise, you have to re-create another VM follwing all steps.

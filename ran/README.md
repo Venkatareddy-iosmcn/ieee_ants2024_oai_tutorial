@@ -18,7 +18,7 @@ Run the gNB
 
 ```bash
 cd openairinterface5g/cmake_targets/ran_build/build
-sudo -E ./nr-softmodem --rfsim --sa -O ~/ANTS_O-RAN_OAI_TUTORIAL/ran/conf/gnb.sa.band78.106prb.rfsim.conf
+sudo -E ./nr-softmodem --rfsim --sa -O ~/ieee_ants2024_oai_tutorial/ran/conf/gnb.sa.band78.106prb.rfsim.conf
 ```
 
 
@@ -26,7 +26,8 @@ Run the UE  from a second terminal:
 
 ```bash
 cd ~/openairinterface5g/cmake_targets/ran_build/build
-sudo -E ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --rfsim --sa -O ~/ANTS_O-RAN_OAI_TUTORIAL/ran/conf/ue.conf
+sudo -E ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --rfsim --sa -O ~/ieee_ants2024_oai_tutorial
+/ran/conf/ue.conf
 ```
 
 Verify that it is connected: you should see the following output at gNB:

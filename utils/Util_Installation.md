@@ -1,6 +1,15 @@
-Installing wireshark
+# Required Software Installation
 
-:red-exclamation-mark: Make sure to select `yes` when the Wireshark installation asks you whether non-superusers should be able to capture packets.
+# 1. Git
+```shell
+sudo apt-get update
+sudo apt-get install git
+```
+
+
+# 2. Wireshark
+
+:exclamation: Make sure to select `yes` when the Wireshark installation asks you whether non-superusers should be able to capture packets.
 Otherwise, you will have to run in sudo mode.
 
 ```bash
@@ -9,7 +18,7 @@ sudo apt update
 sudo apt install -y git net-tools wireshark
 ```
 
-Installing docker
+# 3. Docker
 
 ```bash
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
@@ -19,9 +28,15 @@ sudo apt update
 sudo apt install -y docker docker-ce
 ```
 
-Add your username to the docker group, otherwise you will have to run in sudo mode. 
+:exclamation: Add your username to the docker group, otherwise you will have to run in sudo mode. 
+
 ```bash
 sudo usermod -a -G docker $(whoami)
 ```
 
 Now, close the terminal tab and re-open it.
+
+# 3. Networking
+```bash
+sudo apt install -y iperf3
+```

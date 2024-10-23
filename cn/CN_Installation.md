@@ -2,7 +2,7 @@
 
 
 ```bash
-cd ANTS_O-RAN_OAI_TUTORIAL/cn
+cd ieee_ants2024_oai_tutorial/cn
 ```
 
 If you dont have a docker account, create a docker account in [docker signup](https://www.docker.com/) 

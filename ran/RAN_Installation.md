@@ -10,7 +10,7 @@ compile the gNB and nrUE
 cd openairinterface5g/
 source oaienv
 cd cmake_targets/
-./build -I  
+./build_oai -I  
 ./build_oai -w SIMU --gNB --nrUE --ninja
 ```
 

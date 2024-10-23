@@ -18,9 +18,7 @@ In either case, all users must bring a laptop that has access to internet.
 
 Follow these instrunctions in a sequnetial order.
 
-1. To setup a VM in the GCP, follow the instructions provided in the  vmsetup/Setup_VM_GCP.md  file.
-2. Install the required softwares using the file utils utils/Util_Installation.md in your VM.
-3. Install the OAI CN by following the instructions provided in cn/CN_Installation.md
-4. Finally, install the RAN using the instructions provided in ran/RAN_Installation.md
-
-
+1. To setup a VM in the GCP, follow the instructions provided in [vmsetup/Setup_VM_GCP.md](./vmsetup/Setup_VM_GCP.md)
+2. Install the required softwares using [utils/Util_Installation.md](./utils/Util_Installation.md) in your VM.
+3. Install the OAI CN by following the instructions provided in [cn/CN_Installation.md](./cn/CN_Installation.md)
+4. Finally, install the RAN using the instructions provided in [ran/RAN_Installation.md](./ran/RAN_Installation.md)

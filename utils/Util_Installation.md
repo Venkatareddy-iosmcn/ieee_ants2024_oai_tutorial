@@ -40,3 +40,7 @@ Now, close the terminal tab and re-open it.
 ```bash
 sudo apt install -y iperf3
 ```
+# 4. Tutorial Repository
+```bash
+git clone https://github.com/RajeevGa/ieee_ants2024_oai_tutorial.git
+```

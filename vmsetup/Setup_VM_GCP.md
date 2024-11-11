@@ -3,12 +3,12 @@
 # Virtual Machine Creation in Google Cloud Platform for Running OAI
 
 #  1. Introduction
-This tutorial describes the steps in creating a virtual machine (VM) on the Google Cloud Platform (GCP). The VM can run an end-to-end 5G network based on the OpenAirInterface (OAI) software stack in an RF simulated (RFsim) mode. 
+This tutorial describes the steps in creating a virtual machine (VM) on the Google Cloud Platform (GCP). The VM can run an end-to-end 5G network based on the OpenAirInterface (OAI) software stack in RF simulator (RFsim) mode. 
 
 ## 1.1 Prerequisites
-Before you begin, make sure you have access to your GCP account. If you do not have one, you can sign up with your google account at   [https://cloud.google.com/](https://cloud.google.com)
+Before you begin, make sure you have access to your GCP account. If you do not have one, you can sign up with your Google account at   [https://cloud.google.com/](https://cloud.google.com)
 
-Depending on the country you are located, generally, you have some free credits to try the GCP products. If you haven't used them already, these free credits would be enough to have a hands-on experience with OAI for a few days.
+Depending on the country you are located in, you generally have some free credits to try the GCP products. If you haven't used them already, these free credits would be enough for a few days to have a hands-on experience with OAI.
 
 ## 1.2 Minimum Computing Requirements
 To run an end-to-end 5G network with OAI Core Network (CN),

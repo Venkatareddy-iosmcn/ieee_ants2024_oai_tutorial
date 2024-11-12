@@ -1,4 +1,4 @@
-# Procedure to install and run OAI basestation (gNB) and the user equipment (nrUE)
+# Procedure to install and run OAI base station (gNB) and the user equipment (nrUE)
 
 clone the ran repository
 ```bash
@@ -76,7 +76,7 @@ docker exec -it oai-ext-dn ping <UE IP address>              # from container, "
 docker exec -it oai-ext-dn bash
 iperf3 -s
 ```
-- on the host in new terminal, run iperf3 client and bind the UE IP address:
+- on the host in a new terminal, run iperf3 client and bind the UE IP address:
 ```
 iperf3 -B <UE IP ADDRESS> -c 192.168.70.135 -u -b 50M -R # DL
 iperf3 -B <UE IP ADDRESS> -c 192.168.70.135 -u -b 20M    # UL
